@@ -4,7 +4,7 @@ from pathlib import Path
 from markdown_blocks import markdown_to_html_node
 
 def generate_pages_recursive(
-    dir_path_content: str, template_path: str, dest_dir_path: str
+    dir_path_content: str, template_path: str, dest_dir_path: str, basepath: str
 ) -> None:
     for filename in os.listdir(dir_path_content):
         from_path = os.path.join(dir_path_content, filename)
